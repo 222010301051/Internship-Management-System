@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Files</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f7fa; /* Light blue background */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #content-container {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+        }
+
+        #upload-section,
+        #files-section {
+            width: 48%;
+            background-color: #ffcc99; /* Light orange background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #upload-section {
+            margin-right: 2%;
+        }
+
+        #file-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        #update-button {
+            background-color: #3399ff; /* Light blue button color */
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #update-button:hover {
+            background-color: #0066cc; /* Darker blue on hover */
+        }
+
+        #files-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        #files-list li {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #e6e6e6; /* Light grey background for each file entry */
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .file-actions a {
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .file-actions .view-button {
+            background-color: #5cb85c; /* Green for view */
+        }
+
+        .file-actions .download-button {
+            background-color: #337ab7; /* Blue for download */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content-container">
+        <div id="upload-section">
+            <h2>Upload Private Files</h2>
+            <h4>Welcome {{ email }}</h4>
+            <form id="file-form" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <label for="file">Choose files:</label>
+                <input type="file" name="file" id="file" required multiple>
+                <button id="update-button" type="submit" onclick="animateFormSubmission()">Update Files</button>
+            </form>
+        </div>
+
+        <div id="files-section">
+            <h2>Your Uploaded Files:</h2>
+            <ul id="files-list">
+                {% for file in files %}
+                    <li>
+                        <span>{{ file.file.name }} - {{ file.uploaded_at }}</span>
+                        <div class="file-actions">
+
+                            <a href="{% url 'download_file' file.id %}" class="download-button">Download</a>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Your JavaScript animations here
+        function animateFormSubmission() {
+            var animationContainer = document.getElementById('content-container');
+            animationContainer.style.animation = 'fadeOut 1s ease-out';
+            setTimeout(function () {
+                document.forms[0].submit();
+            }, 1000);
+        }
+    </script>
+</body>
+
+</html>

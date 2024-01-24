@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        /* Custom Styles for Navbar */
+        .custom-navbar {
+            background-color: #e77e3c; /* Updated background color */
+        }
+
+        .custom-navbar .navbar-brand,
+        .custom-navbar .navbar-nav .nav-link {
+            color: #fff; /* Text color */
+        }
+
+        /* Custom Styles for Buttons */
+        .btn-custom {
+         display: inline-block;
+        width: 50%;
+        height: 43px;
+        background-color: #151111;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 0.8rem;
+        font-size: 0.8rem;
+        margin-bottom: 0.1rem;
+        transition: 0.3s;
+
+        .btn-custom:hover {
+            background-color: #ff6b58; /* Hover background color */
+        }
+
+        /* Custom Styles for Container */
+        .custom-container {
+            margin-top: 20px;
+        }
+
+        .custom-container h4 {
+            color: #0a4275; /* Heading color */
+            font-size: 24px; /* Font size */
+            margin-bottom: 20px;
+        }
+
+        .custom-container p {
+            color: #555; /* Paragraph text color */
+            font-size: 18px; /* Font size */
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar with Custom Color -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">Student Dashboard</a>
+            <!-- Activity Button with Dropdown -->
+            <div class="ml-auto">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown">
+                        Activity
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <!-- Link to "Upload Files" page -->
+                        <a class="dropdown-item" href="{% url 'student_files' %}">Upload Files</a>
+                        <a class="dropdown-item" href="https://wa.me/{{ faculty_phone }}">Chat</a>
+                        <a class="dropdown-item" href="{% url 'student_marks_view' %}">Check Marks</a>
+                        <a class="dropdown-item" href="{% url 'internship_opportunities' %}">Internship Opportunities</a>
+                        <a class="dropdown-item" href="{% url 'student_private_files' email=email %}">Private Files</a>
+                        <a class="dropdown-item" href="{% url 'resume_builder'  %}">Resume Builder</a>
+                    </div>
+                </div>
+
+<button class="btn btn-danger"><a href="{% url 'Student_Login' %}" style="color: white;">Log Out</a></button>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Container -->
+    <div class="container custom-container">
+        <h4>Welcome {{ email }}</h4>
+        <h4>Faculty Information:</h4>
+        <p>Faculty Name: {{ faculty_name }}</p>
+        <p>Faculty Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to={{ mapping.faculty_email }}" target="_blank">{{ faculty_email }}</a></p>
+        <p>Contact: {{ faculty_phone }}</p>
+
+        <!-- Add your dashboard content here -->
+    </div>
+
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

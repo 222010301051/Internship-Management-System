@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2f4f39ee-c433-4c39-8e17-afa932efc8ce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/Templates/admin_dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/Templates/faculty_activities.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/Templates/faculty_files_view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/Templates/hod_activities.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/Templates/internship.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/Templates/student_marks.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/Templates/student_private_files.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/migrations/0035_company.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini_Project/IMS/media/private_files/20SST843_-_BIG_DATA_ANALYTICS_zcJPxIh.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/20SDS803_-_BIG_DATA_ANALYTICS.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/20SST843_-_BIG_DATA_ANALYTICS.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/Map_Reduce-_Big_Data-1016.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/Module_2_-_Big_Data.pptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/.idea/Mini_Project.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/IMS/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mini_Project/IMS/IMS/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/Templates/Faculty_Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/Templates/Faculty_Login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/Templates/HOD_Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/Templates/HOD_Login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/Templates/Student_Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/Templates/Student_Login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/Templates/faculty_dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/Templates/faculty_dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/Templates/hod_dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/Templates/hod_dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/Templates/main_dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/Templates/main_dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/Templates/mapping_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/Templates/mapping_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/Templates/student_dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/Templates/student_dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/Templates/student_files.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/Templates/student_files.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mini_Project/IMS/Intern_Portal/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Mini_Project/IMS/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/Bs_Resume_10_1ZgXWnR.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/Bs_Resume_10_5OfwG6z.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/Bs_Resume_10_DfEVO4L.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/Bs_Resume_10_akqJ2RX.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/Bs_Resume_10_b0rY1Vr.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/Bs_Resume_10_sipPev3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/Bs_Resume_9_6ZquKiM.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/Bs_Resume_9_DZoP9uW.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/Bs_Resume_9_HA6WovZ.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/Bs_Resume_9_P8IKMNM.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/Bs_Resume_9_PKZsv0l.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/Bs_Resume_9_RCZ4pxt.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/Bs_Resume_9_ZhdPSKe.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/Bs_Resume_9_beq3VeZ.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/Bs_Resume_9_kISMCjw.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/Bs_Resume_9_ld34F5Y.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/Module_II.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/Module_II_Egy1A4W.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/Module_II_XRWi0Io.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/Resume.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/Test_First_Coding.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/Test_First_Coding_-_Example_6LSjc11.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/Test_First_Coding_-_Example_ZhHx3zV.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/Test_First_Coding_l2hGMFX.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/dsa_interview_question_-_Copy_H81Qres.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/dsa_interview_question_-_Copy_RXOMJXW.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/dsa_interview_question_-_Copy_qllakeD.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/dsa_interview_question_-_Copy_wXbrtyJ.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/dsa_interview_question_8xhvzhI.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/dsa_interview_question_N1zn6zH.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/dsa_interview_question_YOr5a8Y.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/dsa_interview_question_ZBf1OGn.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/dsa_interview_question_cGdQGLZ.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/dsa_interview_question_s8gyCte.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/dsa_interview_question_y0dlUjU.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/dsa_interview_question_yg1WwRw.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/IMS/media/uploads/module_I_dggobfk.pptx" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Mini_Project" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2WCV6PG9j6JnSMNQWjA6mRNJ6sU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Goutham Hemanth/PycharmProjects/Mini_Project&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2f4f39ee-c433-4c39-8e17-afa932efc8ce" name="Changes" comment="" />
+      <created>1696236374283</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696236374283</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

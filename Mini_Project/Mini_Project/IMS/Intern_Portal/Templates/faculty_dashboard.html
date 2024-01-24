@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <!-- Include Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- Custom CSS for Orange Color Shades and Animations -->
+    <style>
+      /* Define orange color shades using CSS variables */
+      :root {
+        --main-orange: #e77e3c; /* Main orange color */
+        --light-orange: #ffd700; /* Lighter orange shade */
+        --dark-orange: #ff8c00; /* Darker orange shade */
+      }
+
+      /* Update the custom-navbar background color with the main orange color */
+      .custom-navbar {
+        background-color: var(--main-orange);
+      }
+
+      /* Update text colors for contrast */
+      .custom-navbar .navbar-brand,
+      .custom-navbar .navbar-nav .nav-link {
+        color: #fff; /* White text color for contrast */
+      }
+
+      /* Additional CSS styling for animations */
+      #welcome-text {
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+      }
+
+      /* Add hover effect for activity button */
+      .activity-button:hover {
+        background-color: var(--dark-orange);
+      }
+
+      /* Style the table for better readability */
+      .table th,
+      .table td {
+        vertical-align: middle;
+        text-align: center;
+      }
+
+      /* Add striped rows to the table */
+      .table tbody tr:nth-child(odd) {
+        background-color: #f9f9f9;
+      }
+
+      /* Add hover effect for table rows */
+      .table tbody tr:hover {
+        background-color: #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar with Custom Color -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">Faculty Dashboard</a>
+        <!-- Activity Button with Dropdown -->
+        <div class="ml-auto">
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-primary dropdown-toggle activity-button"
+              data-toggle="dropdown"
+            >
+              Activity
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="{% url 'faculty_files_view' %}"
+                >View Upload Files</a
+              >
+              <a class="dropdown-item" href="#">Chat</a>
+              <a class="dropdown-item" href="#">Group Chat</a>
+            </div>
+            &nbsp;&nbsp;<button class="btn btn-danger">
+              <a href="{% url 'main_dashboard' %}">Log Out</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Add your content here -->
+    <div class="container mt-4">
+      <!-- Animated Welcome Message -->
+      <h3 id="welcome-text">Welcome {{ email }}</h3>
+
+      <div class="container">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Student Registration Number</th>
+              <th>Student Name</th>
+              <th>Student Branch</th>
+              <th>Student Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for mapping in faculty_mappings %}
+            <tr>
+              <td>
+                <a
+                  href="{% url 'faculty_activities' roll_number=mapping.student_registration_number %}"
+                  >{{ mapping.student_registration_number }}</a
+                >
+              </td>
+              <td>{{ mapping.student_name }}</td>
+              <td>{{ mapping.student_branch }}</td>
+              <td>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to={{ mapping.student_email }}"
+                  target="_blank"
+                  >{{ mapping.student_email }}</a
+                >
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Include GSAP library for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+    <!-- JavaScript animation -->
+    <script>
+      // Animate the welcome message
+      gsap.to("#welcome-text", { opacity: 1, y: 0, duration: 0.5, delay: 0.5 });
+    </script>
+  </body>
+</html>
